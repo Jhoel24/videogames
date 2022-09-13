@@ -1,0 +1,110 @@
+.containerAbout {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textAnimationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 5rem;
+    color: #222;
+}
+
+@media(max-width: 620px){
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+.title::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--white);
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animate 4s linear infinite;
+    filter: drop-shadow(0 0 20px var(--white));
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+.developer {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.frontend, .backend {
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+
+@media (max-width: 768px) {
+    .frontend, .backend {
+        font-size: 1.3rem;
+    }
+}
+
+.frontend span, .backend span {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color4)
+}
+
+.connect {
+    font-size: 5rem;
+    margin: 1.5rem 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .connect {
+        font-size: 3rem;
+    }
+}
+
+.containerSocialMedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.containerSocialMedia a {
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width:768px) {
+    .containerSocialMedia a {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+.containerSocialMedia a:hover {
+    cursor: pointer;
+}

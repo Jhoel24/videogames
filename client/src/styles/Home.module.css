@@ -1,0 +1,55 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;    
+    justify-items: center;
+}
+
+.buttons {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.next {
+    background-color: #256D85;
+    color: var(--white);
+    padding: .5rem .8rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: .8rem;
+    border: 1px solid #256D85;
+    transition: all .2s ease-in;
+}
+
+.next:hover {
+    background-color: var(--white);
+    color: #256D85;
+    border: 1px solid #256D85;
+    cursor: pointer;
+}
+
+.prev {
+    background-color: #9C9EFE;
+    color: white;
+    padding: .5rem .8rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: .8rem;
+    border: 1px solid #9C9EFE;
+    transition: all .2s ease-in;
+}
+
+.prev:hover {
+    background-color: white;
+    color: #9C9EFE;
+    border: 1px solid #9C9EFE;
+    cursor: pointer;
+}

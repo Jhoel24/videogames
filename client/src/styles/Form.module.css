@@ -1,0 +1,65 @@
+.title {
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 2.5rem;
+}
+
+.formContainer {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    color: black;
+}
+
+input:not([type="submit"]), textarea, select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid gray;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+label {
+    font-weight: 900;
+    display: block;
+    margin: .5rem 0;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+fieldset {
+    margin: 1rem 0;
+}
+
+.button {
+    padding: .8rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color4);
+    color: var(--white);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: .8rem;
+    border: 1.5px solid var(--color4);
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--color4);
+    border: 1.5px solid var(--color4);
+    cursor: pointer;
+}

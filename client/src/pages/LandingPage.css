@@ -1,0 +1,88 @@
+.container-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color1);
+}
+
+.loader {
+    position: relative;
+    max-width: 1000px;
+    width: 85%;
+    height: 10px;
+    background-color: var(--blanco);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+}
+
+.loader::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094, #0000ff, #00ff00, #ffff00, #fb0094);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    0% {
+        background-position: 500% 0;
+    }
+}
+
+h3 {
+    position: absolute;
+    top: 50%;
+    color: var(--white);
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.6rem;
+        top: 40%;
+    }
+}
+
+@media (max-width: 375px){
+    h3 {
+        top: 38%;
+    }
+}
+
+h3 span {
+    font-weight: 700;
+}
+
+.home-link {
+    position: absolute;
+    bottom: 34%;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+.home-link:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--color1);
+}
